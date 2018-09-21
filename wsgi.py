@@ -7,7 +7,7 @@ def hello():
     return render_template('home.html')
 
 @application.route("/array")
-def random():
+def arrayTest():
     things = [1,2,3,4,5,6,7]
     placeHolder = random.randint(0,len(things));
     return things[placeHolder]
