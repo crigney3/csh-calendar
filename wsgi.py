@@ -5,5 +5,14 @@ application = Flask(__name__)
 def hello():
     return "Hello World!"
 
+<html>
+    <head>
+        <title>Bet This wont work</title>
+    </head>
+    <body>
+        <h1>Hello!</h1>
+    </body>
+</html>
+
 if __name__ == "__main__":
     application.run()
