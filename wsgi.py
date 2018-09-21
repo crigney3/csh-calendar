@@ -2,7 +2,7 @@ from flask import Flask, render_template
 import random
 application = Flask(__name__)
 
-@approute("/")
+@app.route("/")
 def hello():
     return render_template('home.html')
 
