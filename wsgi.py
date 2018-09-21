@@ -2,11 +2,11 @@ from flask import Flask, render_template
 import random
 application = Flask(__name__)
 
-@app.route("/")
+@application.route("/")
 def hello():
     return render_template('home.html')
 
-@app.route("/array")
+@application.route("/array")
 def random():
     things = [1,2,3,4,5,6,7]
     placeHolder = random.randint(0,len(things));
