@@ -8,7 +8,7 @@ def hello():
 
 @application.route("/array")
 def arrayTest():
-    things = [1,2,3,4,5,6,7]
+    things = ["1","2","3","4","5","6","7"]
     placeHolder = random.randint(0,len(things));
     return things[placeHolder]
 
