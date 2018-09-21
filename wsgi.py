@@ -10,7 +10,7 @@ def hello():
 def random():
     things = [1,2,3,4,5,6,7]
     placeHolder = random.randint(0,len(things));
-    return things[placeHolder]
+    return render_template('home.html')
 
 if __name__ == "__main__":
     application.run()
