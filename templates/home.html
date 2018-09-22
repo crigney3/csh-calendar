@@ -1,16 +1,17 @@
 <html>
 	<title>Look a Test</title>
     <h>Current Velociraptors in the area:</h>
-    <p id="Velociraptors"></p>
+    <p id="Velociraptors">0</p>
     <script>
+        function basicMath(){
         var x, y, z;
-        z = Math.floor(Math.random() * 11)
-        x = 1 + 3;
-        y = z * x;
-        
+        x = x + 1;
+        z = Math.floor(Math.random() * x+1)
+        y = z * 2;
         
         document.getElementById("Velociraptors").innerHTML =
         y + ".";
+        }
     </script>
-        
+    <button type="button" onclick="basicMath()">S U M M O N</button>
 </html>
