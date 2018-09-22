@@ -14,9 +14,9 @@ def hello():
     return render_template('home.html')
 
 @application.route("/array")
-def random():
-    things = [1,2,3,4,5,6,7]
-    placeHolder = random.randint(0,len(things));
+def arrayTest():
+    things = ["1","2","3","4","5","6","7"]
+    placeHolder = random.randint(0,len(things)-1);
     return things[placeHolder]
 
 @application.route("/google")
