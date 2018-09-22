@@ -36,12 +36,17 @@ def calendar():
                                           maxResults=10, singleEvents=True,
                                           orderBy='startTime').execute()
     events = events_result.get('items', [])
+    output = 'Events coming up: ';
 
+    #Output
     if not events:
         print('You have no upcoming events!')
+        output = output + 'No events!'
     for event in events:
         start = event['start'].get('dateTime', event['start'].get('date'))
         print(start, event['summary'])
+        output = output + event['summary'] + ', '
+    return output
 
 if __name__ == "__main__":
     application.run()
