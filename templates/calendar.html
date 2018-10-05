@@ -1,0 +1,39 @@
+<html>
+	<title>Look a Test</title>
+    <h>Events:</h>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+    <table>
+        <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+        </tr>
+        {% for cshEvent in allEvents %}
+        <tr>
+            <td>{{  cshEvent.title  }}</td>
+            <td>{{  cshEvent.day  }}</td>
+            <td>{{  cshEvent.date  }}</td>
+            <td>{{  cshEvent.sTime  }}</td>
+            <td>{{  cshEvent.eTime  }}</td>
+            <td>{{  cshEvent.desc  }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <div id="Events">{{  events  }}</div>
+    <div id="StartTimes">{{  events[0]  }}: Day:{{  dates[0]  }}, Starts at: {{ startTimes[0] }}, Ends at: {{  endTimes[0]  }}</div>
+    <div id="EndTimes">{{ endTimes }}</div>
+    <div id="Dates"></div>
+    <script>
+    </script>
+    <input type="button" id='next' value='Next' />
+    <div id="container"></div>
+</html>
