@@ -1,13 +1,16 @@
-<html>
+<!DOCTYPE html>
+    <html>
 	<title>Look a Test</title>
+    <head>
+    <link rel="stylesheet" type="text/css" href="https://themeswitcher.csh.rit.edu/api/get">
+    </head>
     <h>Events:</h>
-    <style>
-        table, th, td {
-            border: 1px solid black;
-            text-align: center;
-        }
-    </style>
-    <table>
+    <p id="test"></p>
+    <body>
+    
+   
+    
+    <table class="table table-bordered">
         <tr>
             <th>Sun</th>
             <th>Mon</th>
@@ -17,23 +20,356 @@
             <th>Fri</th>
             <th>Sat</th>
         </tr>
-        {% for cshEvent in allEvents %}
-        <tr>
-            <td>{{  cshEvent.title  }}</td>
-            <td>{{  cshEvent.day  }}</td>
-            <td>{{  cshEvent.date  }}</td>
-            <td>{{  cshEvent.sTime  }}</td>
-            <td>{{  cshEvent.eTime  }}</td>
-            <td>{{  cshEvent.desc  }}</td>
+        <tr id="w1">
+            <td id="0">
+               {% for item in allEvents[0] %}
+                    <div class="i-time">
+                        {{item.sTime}}
+                    </div>
+                    <div class="i-title">
+                        {{item.title}}
+                    </div>
+               {% endfor %}
+            </td>
+            <td id="1">
+                {% for item in allEvents[1] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="2">
+                {% for item in allEvents[2] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="3">
+                {% for item in allEvents[3] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="4">
+                {% for item in allEvents[4] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="5">
+                {% for item in allEvents[5] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="6">
+                {% for item in allEvents[6] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
         </tr>
-        {% endfor %}
+        <tr id="w2">
+            <td id="7">
+                {% for item in allEvents[7] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="8">
+                {% for item in allEvents[8] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="9">
+                {% for item in allEvents[9] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="10">
+                {% for item in allEvents[10] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="11">
+                {% for item in allEvents[11] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="12">
+                {% for item in allEvents[12] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="13">
+                {% for item in allEvents[13] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+        </tr>
+        <tr id="w3">
+            <td id="14">
+                {% for item in allEvents[14] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="15">
+                {% for item in allEvents[15] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="16">
+                {% for item in allEvents[16] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="17">
+                {% for item in allEvents[17] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="18">
+                {% for item in allEvents[18] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="19">
+                {% for item in allEvents[19] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="20">
+                {% for item in allEvents[20] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+        </tr>
+        <tr id="w4">
+            <td id="21">
+                {% for item in allEvents[21] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="22">
+                {% for item in allEvents[22] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="23">
+                {% for item in allEvents[23] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="24">
+                {% for item in allEvents[24] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="25">
+                {% for item in allEvents[25] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="26">
+                {% for item in allEvents[26] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="27">
+                {% for item in allEvents[27] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+        </tr>
+        <tr id="w4">
+            <td id="28">
+                {% for item in allEvents[28] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="29">
+                {% for item in allEvents[29] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="30">
+                {% for item in allEvents[30] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="31">
+                {% for item in allEvents[31] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+            </td>
+            <td id="32">
+                {% for item in allEvents[32] %}
+                <div class="i-time">
+                    {{item.sTime}}
+                </div>
+                <div class="internal">
+                    {{item.title}}
+                </div>
+                {% endfor %}
+
+            </td>
+            <td id="33"></td>
+            <td id="34"></td>
+        </tr>
     </table>
-    <div id="Events">{{  events  }}</div>
-    <div id="StartTimes">{{  events[0]  }}: Day:{{  dates[0]  }}, Starts at: {{ startTimes[0] }}, Ends at: {{  endTimes[0]  }}</div>
-    <div id="EndTimes">{{ endTimes }}</div>
-    <div id="Dates"></div>
+
+    
+    
     <script>
+    
+    
     </script>
-    <input type="button" id='next' value='Next' />
-    <div id="container"></div>
+    </body>
 </html>
